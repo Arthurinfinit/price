@@ -1,0 +1,132 @@
+:root{
+    --ciano-escuro: hsl(158, 36%, 37%);
+    --creme: hsl(30, 38%, 92%);
+    --verde-escuro:hsl(212, 21%, 14%);
+    --azul-acizentado:hsl(228, 12%, 48%);
+    --branco:#ffffff;
+}
+
+body{
+    display: flex;
+    background-color: var(--creme);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+}
+
+.caixa{
+    width: auto;
+    max-width: 60%;
+    height: auto;
+    min-height: 50%;
+    background-color: var(--branco);
+    border-radius: 10px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 50% 50%;
+}
+
+.imagem{
+    background-image: url(./imagem1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    border-radius: 10px 0 0 10px;
+}
+.perfume{
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column; /* Garante que os elementos dentro de perfume fiquem empilhados */
+    justify-content: space-between; /* Distribui o conteúdo com espaço entre eles */
+    height: 100%; /* Garante que ocupe toda a altura disponível */
+}
+
+.perfume h2{
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--azul-acizentado);
+    padding-top: 20px;
+}
+
+.perfume h1{
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0px;
+}
+
+.perfume p{
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    color: var(--azul-acizentado);
+    font-size: 18px;
+}
+
+.preco{
+    display: flex;
+    align-items: center;
+    margin-top: auto; /* Empurra o preço para o final */
+    margin-bottom: 10px; /* Distância de 10px entre o preço e o botão */
+}
+
+.preco h1, .preco p{
+    margin: 0;
+}
+
+.preco h1{
+    color: var(--ciano-escuro);
+}
+
+.preco p{
+    padding-left: 10px;
+    text-decoration: line-through;
+}
+
+.botao{
+    display: flex;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--ciano-escuro);
+    color: var(--branco);
+    margin-bottom: 20px; /* Distância de 20px do botão para o fim da página */
+}
+
+.botao h6{
+    margin: 0px;
+    padding-left: 10px;
+    font-size: 14px;
+    font-family: "montserrat" serif;
+    font-weight: 700;
+}
+
+@media (max-width: 900px) {
+
+    .caixa{
+        width: 90%; /* Aumenta o tamanho da caixa para 90% em telas pequenas */
+        display: flex;
+        flex-direction: column; /* Muda a direção para coluna */
+    }
+
+    .imagem{
+        background-image: url(./imagem2.jpg); /* Muda a imagem de fundo para imagem2 */
+        border-radius: 10px 10px 0 0; /* Borda apenas superior */
+        height: 250px; /* Ajusta a altura da imagem */
+    }
+
+    .perfume{
+        padding-left: 20px; /* Ajusta o padding nas laterais */
+        padding-right: 20
+    }
+}
