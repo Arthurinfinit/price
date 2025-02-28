@@ -115,6 +115,7 @@ body{
 
     .caixa{
         width: 90%; /* Aumenta o tamanho da caixa para 90% em telas pequenas */
+        height: 80%;
         display: flex;
         flex-direction: column; /* Muda a direção para coluna */
     }
