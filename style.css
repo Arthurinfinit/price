@@ -81,11 +81,13 @@ body{
 
 .preco h1{
     color: var(--ciano-escuro);
+    font-size:24px;
 }
 
 .preco p{
     padding-left: 10px;
     text-decoration: line-through;
+    font-size:12px;
 }
 
 .botao{
